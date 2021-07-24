@@ -4,78 +4,85 @@
         <title>Brandy Barfield</title>
         <meta charset="UTF-8"/>
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
-        <title>Document</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     </head>
+
     <body id="top">
-        <header>
-            <a href="#top">Jake Armstrong</a>
+        <header class="fixed w-full bg-purple-600 text-white md:flex md:justify-between">
+            <a class="font-bold block px-8 py-4" href="#top">Brandy Barfield</a>
             <nav>
-                <ul>
+                <ul class="md:flex">
                     <li>
-                        <a href="#hero">Hero</a>
+                        <a class="block px-8 py-4 hover:bg-purple-700" href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a class="block px-8 py-4 hover:bg-purple-700" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="tech-support">Tech support</a>
+                        <a class="block px-8 py-4 hover:bg-purple-700" href="interests">Interests</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="hero">
-                <p>It's Jack from</p>
-                <h1>State Farm</h1>
-                <p>Communication * Human-Centered Computing</p>
+            <section id="home" class="h-screen bg-purple-500 text-white text-center grid place-items-center">
+                <div>
+                    <h3 class="text-lg font-bold italic uppercase tracking wider">Hi! It's</h3>
+                    <h1 class="font-bold text-8xl leading-none">Brandy Barfield</h1>
+                    <p class="font-mono text-lg" style="line-height:4">CS Student at Clemson University | Class of 2022</p>
+                    <a
+                        href="https://www.linkedin.com/in/brandy-barfield-649186170/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        class="mt-10 bg-white rounded-lg px-8 py-4 text-black inline-block"
+                    >Connect with Me!</a>
+                </div>
             </section>
 
-            <section id="about">
-                <h2>About</h2>
-                <ul>
-                    <li>
-                        <img src="picture.jpg"/>
-                        <h3>Design</h3>
-                        <p>I love designing- especially</p>
-                    </li>
-                    <li>
-                        <img src="van.jpg"/>
-                        <h3>Programming</h3>
-                        <p>I enjoy web dev- esp javascript</p>
-                    </li>
-                    <li>
-                        <img src="taco.jpg"/>
-                        <h3>Taco Tuesday</h3>
-                        <p>I had tasty tacos for lunch!</p>
-                    </li>
-                </ul>
+            <section id="about" class="text-gray-600 body-font overflow-hidden">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="myphoto.jpg">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                      <h1 class="text-gray-900 text-2xl title-font font-medium mb-1">About Me</h1>
+                      <p class="leading-relaxed">I'm from Lexington, SC.</p>
+                      <p class="leading-relaxed">I am currently studying computer science at Clemson University and I have a minor in Digital Production Arts</p>
+                    </div>
+                  </div>
+                </div>
             </section>
 
-            <section id="tech-support">
-                <h2>Tech Support</h2>
-                <ul>
-                    <li>
-                        <img />
-                        <h3>Kerri Wong</h3>
-                        <p>Goose Creek, SC</p>
+            <section id="interests" class="bg-gray-100 pt-10">
+                <h1 class="text-center text-2xl font-medium text-gray-900">Interests</h1>
+                <ul class="grid p-10 gap-10 md:grid-cols-3">
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="niki.jpg" class="w-full">
+                        <div class="p-4">
+                            <h3 class="font-bold">Music</h3>
+                            <p>I like to listen to R&B, pop and EDM. My top artists include NIKI, Kehlani, and Illenium</p>
+                        </div>
                     </li>
-                    <li>
-                        <img />
-                        <h3>Helena Guo</h3>
-                        <p>Goose Creek, SC</p>
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="myart.jpg" class="w-full"/>
+                        <div class="p-4">
+                            <h3 class="font-bold">Art</h3>
+                            <p>In my free time, I like to paint or sketch. I've recently taken up drawing on my iPad</p>
+                        </div>
                     </li>
-                    <li>
-                        <img />
-                        <h3>Anh Truong</h3>
-                        <p>Lexington, SC</p>
+                    <li class="bg-white shadow rounded-lg overflow-hidden">
+                        <img src="travel.jpg" class="w-full"/>
+                        <div class="p-4">
+                            <h3 class="font-bold">Traveling</h3>
+                            <p>From San Francisco to Shanghai, I love traveling to new places</p>
+                        </div>
                     </li>
                 </ul>
             </section>
         </main>
 
-        <footer>
-            Copywrite 2021 Brandy Barfield. All rights reserved.
+        <footer class="text-white bg-gray-800 p-10 italic text-center">
+            Copyright 2021 Brandy Barfield. All rights reserved.
         </footer>
     </body>
 </html>
